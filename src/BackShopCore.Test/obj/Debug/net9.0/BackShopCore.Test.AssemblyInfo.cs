@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BackShopCore.Test")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+05145d86312e246a45fd0354631a3f908fc2791b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a81f56355ce5c101a570ab668c3cf7af8309a0ec")]
 [assembly: System.Reflection.AssemblyProductAttribute("BackShopCore.Test")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BackShopCore.Test")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
