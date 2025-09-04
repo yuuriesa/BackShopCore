@@ -6,7 +6,13 @@ namespace BackShopCore.Data
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
-            
+
+        }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            var connetionString = "";
+            optionsBuilder.UseSqlServer(connectionString: connetionString);
         }
     }
 }
