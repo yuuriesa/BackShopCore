@@ -11,8 +11,8 @@ namespace BackShopCore.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            var connetionString = "Server=localhost;Database=BackShopCoreDB;User=SA;Password=Password123!;TrustServerCertificate=True";
-            optionsBuilder.UseSqlServer(connectionString: connetionString);
+            var connectionString = "Server=localhost;Database=BackShopCoreDB;User=SA;Password=Password123!;TrustServerCertificate=True";
+            optionsBuilder.UseSqlServer(connectionString: connectionString);
         }
     }
 }
