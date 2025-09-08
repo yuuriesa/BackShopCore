@@ -32,10 +32,34 @@ namespace BackShopCore.Models
             _lastName = lastName;
             _dateOnly = dateOnly;
         }
-        
 
         //public methods
+        public static Customer SetExistingInfo
+        (
+            int customerId,
+            string firstName,
+            string lastName,
+            DateOnly dateOnly
+        )
+        {
+            Customer customer = new Customer
+            (
+                customerId: customerId,
+                firstName: firstName,
+                lastName: lastName,
+                dateOnly: dateOnly
+            );
+
+            customer.Validate();
+
+            return customer;
+        }
 
         //private methods
+
+        private void Validate()
+        {
+
+        }
     }
 }
