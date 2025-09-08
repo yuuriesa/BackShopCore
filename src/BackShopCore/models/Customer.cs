@@ -15,6 +15,24 @@ namespace BackShopCore.Models
         public bool IsValid { get; private set; }
 
         //constructors
+        private Customer()
+        {
+
+        }
+        private Customer
+        (
+            int customerId,
+            string firstName,
+            string lastName,
+            DateOnly dateOnly
+        )
+        {
+            CustomerId = customerId;
+            _firstName = firstName;
+            _lastName = lastName;
+            _dateOnly = dateOnly;
+        }
+        
 
         //public methods
 
