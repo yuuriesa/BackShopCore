@@ -98,6 +98,16 @@ namespace BackShopCore.Models
             _lastName = lastName;
         }
 
+        private void SetEmailAddress(string emailAddress)
+        {
+            _emailAddress = emailAddress;
+        }
+
+        private void SetDateOfBirth(DateTime dateOfBirth)
+        {
+            _dateOfBirth = DateOnly.FromDateTime(dateTime: dateOfBirth);
+        }
+
         private void Validate()
         {
             DateTime dateNow = DateTime.Now;
