@@ -5,12 +5,14 @@ namespace BackShopCore.Models
         //private properties
         private string _firstName;
         private string _lastName;
+        private string _emailAddress;
         private DateOnly _dateOfBirth;
 
         //public properties
         public int CustomerId { get; private set; }
         public string FirstName => _firstName;
         public string LastName => _lastName;
+        public string EmailAddress => _emailAddress;
         public DateOnly DateOfBirth => _dateOfBirth;
         public bool IsValid { get; private set; }
         public string ErrorMessageIfIsNotValid { get; private set; }
@@ -25,6 +27,7 @@ namespace BackShopCore.Models
             int customerId,
             string firstName,
             string lastName,
+            string emailAddress,
             DateOnly dateOfBirth
         )
         {
@@ -64,9 +67,15 @@ namespace BackShopCore.Models
         {
             DateTime dateNow = DateTime.Now;
 
-            if (_firstName.Length > 40 && _lastName.Length > 40)
+            if (_firstName.Length > 40)
             {
-                ErrorMessageIfIsNotValid = "Must have a maximum of 40 characters";
+                ErrorMessageIfIsNotValid = $"FirstName {_firstName} Must have a maximum of 40 characters";
+                IsValid = false;
+            }
+
+            if (_lastName.Length > 40)
+            {
+                ErrorMessageIfIsNotValid = $"LastName {_lastName} Must have a maximum of 40 characters";
                 IsValid = false;
             }
 
