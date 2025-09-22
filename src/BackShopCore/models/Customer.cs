@@ -73,10 +73,20 @@ namespace BackShopCore.Models
         )
         {
             Customer customer = new Customer();
-            
+
         }
 
         //private methods
+        private void SetCustomerId(int customerId)
+        {
+            if (customerId < 1)
+            {
+                IsValid = false;
+                ErrorMessageIfIsNotValid = "CustomerId must be greater than zero";
+            }
+
+            CustomerId = customerId;
+        }
 
         private void Validate()
         {
