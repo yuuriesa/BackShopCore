@@ -64,6 +64,18 @@ namespace BackShopCore.Models
             return customer;
         }
 
+        public static Customer ResgisterNew
+        (
+            string firstName,
+            string lastName,
+            string emailAddress,
+            DateTime dateOfBirth
+        )
+        {
+            Customer customer = new Customer();
+            
+        }
+
         //private methods
 
         private void Validate()
