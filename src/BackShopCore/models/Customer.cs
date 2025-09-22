@@ -34,6 +34,7 @@ namespace BackShopCore.Models
             CustomerId = customerId;
             _firstName = firstName;
             _lastName = lastName;
+            _emailAddress = emailAddress;
             _dateOfBirth = dateOfBirth;
 
             Validate();
@@ -45,6 +46,7 @@ namespace BackShopCore.Models
             int customerId,
             string firstName,
             string lastName,
+            string emailAddress,
             DateOnly dateOfBirth
         )
         {
@@ -53,6 +55,7 @@ namespace BackShopCore.Models
                 customerId: customerId,
                 firstName: firstName,
                 lastName: lastName,
+                emailAddress: emailAddress,
                 dateOfBirth: dateOfBirth
             );
 
