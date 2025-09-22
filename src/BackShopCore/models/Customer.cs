@@ -31,6 +31,7 @@ namespace BackShopCore.Models
             DateOnly dateOfBirth
         )
         {
+            // Testar o método do CustomerID depois
             CustomerId = customerId;
             _firstName = firstName;
             _lastName = lastName;
