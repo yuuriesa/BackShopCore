@@ -88,6 +88,11 @@ namespace BackShopCore.Models
             CustomerId = customerId;
         }
 
+        private void SetFirstName(string firstName)
+        {
+            _firstName = firstName;
+        }
+
         private void Validate()
         {
             DateTime dateNow = DateTime.Now;
