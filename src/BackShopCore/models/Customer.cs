@@ -74,6 +74,13 @@ namespace BackShopCore.Models
         {
             Customer customer = new Customer();
 
+            customer.SetFirstName(firstName: firstName);
+            customer.SetLastName(lastName: lastName);
+            customer.SetEmailAddress(emailAddress: emailAddress);
+            customer.SetDateOfBirth(dateOfBirth: dateOfBirth);
+            customer.Validate();
+
+            return customer;
         }
 
         //private methods
